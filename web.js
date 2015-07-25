@@ -43,8 +43,8 @@ var allowCrossDomain = function(req, res, next){
 
   //instantiate allowed domains list
   var allowedDomains = [
-    'http://YOUR_DOMAIN.com',
-    'https://YOUR_DOMAIN.com'
+    '*',
+    '*'
   ];
 
   //check if request origin is in allowed domains list
@@ -71,7 +71,7 @@ app.use(express.bodyParser());
 /******************************************************************************
  * Database Setup
  *****************************************************************************/
-var mongoCollectionName = 'MONGO_COLLECTION_NAME';
+var mongoCollectionName = 'dates';
 var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/default';
 var database;
 function connect(callback)
