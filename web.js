@@ -13,8 +13,8 @@ var q = require('q');
 var oa;
 var app = express();
 
-var clientId = 'GOOGLE_CLIENT_ID';
-var clientSecret = 'GOOGLE_CLIENT_SECRET';
+var clientId = '181574966625-hs527ffvjurm2p9g4asq6vm0rk9675a0.apps.googleusercontent.com';
+var clientSecret = 'KhXnx85mo7Y06d299YKff5BF';
 var scopes = 'https://www.googleapis.com/auth/calendar';
 var googleUserId;
 var refreshToken;
@@ -26,17 +26,17 @@ var baseUrl;
 app.configure('development',function(){
   console.log('!! DEVELOPMENT MODE !!');
 
-  googleUserId = 'GOOGLE_EMAIL_ADDRESS';
+  googleUserId = 'saraines.calderon@gmail.com';
   refreshToken = 'GOOGLE_REFRESH_TOKEN';
-  baseUrl = 'DEV_API_URL';
+  baseUrl = 'https://warm-lake-1109.herokuapp.com/';
 });
 
 app.configure('production', function(){
   console.log('!! PRODUCTION MODE !!');
 
-  googleUserId = 'GOOGLE_EMAIL_ADDRESS';
+  googleUserId = 'saraines.calderon@gmail.com';
   refreshToken = 'GOOGLE_REFRESH_TOKEN';
-  baseUrl = 'PRODUCTION_API_URL';
+  baseUrl = 'https://warm-lake-1109.herokuapp.com/';
 });
 
 var allowCrossDomain = function(req, res, next){
