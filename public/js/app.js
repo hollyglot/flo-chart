@@ -9,7 +9,7 @@ angular.module('flo-chart', [
 .config(['$routeProvider', function($routeProvider){
 	$routeProvider.when('/', {templateUrl: 'partials/main.html', controller: 'MainController'});
 	$routeProvider.when('/event/new', {templateUrl: 'partials/newEvent.html', controller: 'AddEventController'});
-	$routeProvider.when('/event/:eventId', {templateUrl: 'partials/event.html', controller: 'EventController'});
+	// $routeProvider.when('/event/:eventId', {templateUrl: 'partials/event.html', controller: 'EventController'});
 	$routeProvider.otherwise({redirectTo: '/'});
 }])
 

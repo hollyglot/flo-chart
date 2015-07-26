@@ -1,8 +1,33 @@
-<h1>Upcoming Reservations</h1>
-<div>
-	<input ng-model="search" type="text" placeholder="Search"></input>
+
+
+<h2 style="color: #4D6B50;">Welcome to VCal!</h1>
+
+<br/>
+
+<form>
+<div class="input-group">
+	<input type="email" name="email" class="form-control" placeholder="Your Gmail Address" ng-model="contactInfo.email" id="email"  required>
+</div>
+
+	<br/>
+	
+<div class="input-group">
+<input type="password" name="password" id="password" class="form-control" placeholder="Your Gmail Password" required>
+</div>
+
+<br/>
+<br/>
+
+	<div class="form-group">
+		<div>
+			<button class="btn btn-success">Login</button>			
+		</div>
+	</div> 
+</form>
+
+<!-- <div>
 	<div ng-repeat="event in events | filter:search">
 		<a href="#/event/{{event.id}}">{{event.summary}}</a>
 		- {{ event.start.dateTime || event.start.date | date:medium }}
 	</div>
-</div>
+</div> -->
