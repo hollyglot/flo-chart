@@ -1,12 +1,12 @@
 
 
-<h2 style="color: #4D6B50;">Add A Cycle</h1>
+<h2 style="color: #4D6B50;">Add Data</h1>
 
 <br/>
 
 <div style="color: gray;">
 
-<p style="color: #4D6B50;">Please add the dates of your last cycle.</p>
+	<p style="color: #4D6B50;">Please add the dates of your previous cycles.</p>
 
 
 	<p style="color: #4D6B50;">Estimate the best you can if you can't remember.</p>
@@ -19,47 +19,53 @@
 
 <div class="form-group">
 
-<label style="color: #4D6B50;">First Day Of Cycle</label>
-<input type="date" name="startdate" placeholder="">
+	<label style="color: #4D6B50;">First Day Of Cycle</label>
+	<input type="date" name="startdate" placeholder="">
 
-<br/>
-<br/>
+	<br/>
+	<br/>
 
-<label style="color: #4D6B50;">Last Day Of Cycle</label>
-<input type="date" name="enddate" placeholder="">
+	<label style="color: #4D6B50;">Last Day Of Cycle</label>
+	<input type="date" name="enddate" placeholder="">
 
-<br/>
-<br/>
-<br/>
+	<br/>
+	<br/>
+
+	<label style="color: #4D6B50;">Number Of Days <br/>Since The First Day <br/>Of Previous Cycle</label>
+	<input type="text" name="cyclelength" placeholder="Ex: 28">
+
+	<br/>
+	<br/>
+	<br/>
 
 	<div class="form-group">
-			<button class="btn btn-success" ng-disabled="contactForm.$invalid" ng-click="addEvent()">Add</button>			
-		</div>
-	</div> 
+		<button class="btn btn-success" ng-disabled="contactForm.$invalid" ng-click="addEvent()">Add</button>			
+	</div>
+</div> 
 
 </div>
- 	
+
 <!--  	<inputfield ng-model="contactInfo.firstName" type="text" label="First Name" placeholder="Enter first name..." id="firstName" required></inputfield>
- 	<inputfield ng-model="contactInfo.lastName" type="text" label="Last Name" placeholder="Enter last name..." id="lastName" required></inputfield>
- 	<inputfield ng-model="contactInfo.email" type="email" label="Email" placeholder="Enter email address..." id="email" required></inputfield>
- 	<inputfield ng-model="contactInfo.phone" type="tel" label="Phone" placeholder="Enter phone number..." id="email" required></inputfield>
- 	<inputfield ng-model="contactInfo.details" type="textarea" label="Details" id="details"></inputfield>
-	<div class="form-group">
-		<label for="startDateInput" class="col-sm-2 control-label">Start Date</label>
-		<div class="col-sm-2">
-			<input type="date" class="form-control" id="startDateInput" ng-model="event.startDate" required>
-		</div>
-		<div class="col-sm-2">
-			<input type="time" class="form-control" id="startTimeInput" ng-model="event.startTime" required>
-		</div>
-		<div class="col-sm-">
-			<span class="for">for</span> <select class="form-control" ng-model="event.duration" ng-options="d.label for d in durations" style="width:auto" required></select>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-2">
-			<button class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="addEvent()">Add Reservation</button>			
-		</div>
-	</div> -->
-	
+<inputfield ng-model="contactInfo.lastName" type="text" label="Last Name" placeholder="Enter last name..." id="lastName" required></inputfield>
+<inputfield ng-model="contactInfo.email" type="email" label="Email" placeholder="Enter email address..." id="email" required></inputfield>
+<inputfield ng-model="contactInfo.phone" type="tel" label="Phone" placeholder="Enter phone number..." id="email" required></inputfield>
+<inputfield ng-model="contactInfo.details" type="textarea" label="Details" id="details"></inputfield>
+<div class="form-group">
+<label for="startDateInput" class="col-sm-2 control-label">Start Date</label>
+<div class="col-sm-2">
+	<input type="date" class="form-control" id="startDateInput" ng-model="event.startDate" required>
+</div>
+<div class="col-sm-2">
+	<input type="time" class="form-control" id="startTimeInput" ng-model="event.startTime" required>
+</div>
+<div class="col-sm-">
+	<span class="for">for</span> <select class="form-control" ng-model="event.duration" ng-options="d.label for d in durations" style="width:auto" required></select>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-2"></div>
+<div class="col-sm-2">
+	<button class="btn btn-primary" ng-disabled="contactForm.$invalid" ng-click="addEvent()">Add Reservation</button>			
+</div>
+</div> -->
+
